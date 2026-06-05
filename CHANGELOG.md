@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.1.2
+
+[compare changes](https://github.com/yoyoys/kroki-editor/compare/48c64c3c1d4ec41f97208575bbdd51a80eed2eae...v1.1.2)
+
+### 🚀 Enhancements
+
+- Console note inviting feature requests and bug reports ([867c8f6](https://github.com/yoyoys/kroki-editor/commit/867c8f6))
+
+### ❤️ Contributors
+
+- Yoyo Young <yoyoys@livemail.tw>
+
 ## v1.1.1
 
 [compare changes](https://github.com/yoyoys/kroki-editor/compare/v1.1.0...v1.1.1)
