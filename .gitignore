@@ -1,0 +1,26 @@
+# brainstorm / internal planning artifacts (not for the public repo)
+.superpowers/
+docs/superpowers/
+
+# deps / build
+node_modules/
+dist/
+
+# env (.env is the committed shared dev default; local overrides stay untracked)
+.env.local
+.env.*.local
+
+# OS / editor
+.DS_Store
+*.log
+
+# TypeScript incremental build info
+*.tsbuildinfo
+
+# local verification screenshots
+mcp-screenshots/
+
+# transient files produced by `make pre-release-dry` / `gh-pre-release`
+.pkg.bak
+.cl.bak
+.ghnotes.tmp

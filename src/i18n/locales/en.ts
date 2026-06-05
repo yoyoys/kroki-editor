@@ -1,0 +1,27 @@
+export default {
+  app: { title: 'Kroki Editor' },
+  toolbar: { share: 'Share', edit: 'Edit', view: 'View', fullscreen: 'Fullscreen', language: 'Language', theme: 'Theme', examples: 'Examples', copyImage: 'Copy image URL' },
+  zoom: { in: 'Zoom in', out: 'Zoom out', fit: 'Fit', background: 'Toggle background' },
+  preview: { empty: 'Enter diagram source on the left', rendering: 'Rendering…' },
+  previewError: {
+    network: 'Cannot reach the Kroki server — check the endpoint, or this diagram type\'s service may not be enabled',
+    syntax: 'Diagram syntax error',
+    unsupported: 'This diagram type may not be enabled on the server',
+    unknown: 'Rendering failed',
+    near: 'near line {line}',
+    details: 'Details',
+  },
+  share: {
+    title: 'Share diagram',
+    format: 'Format',
+    imageUrl: 'Image URL',
+    embed: 'Embed (Markdown)',
+    editable: 'Editable links',
+    editableUrl: 'Editable URL',
+    editableMd: 'Editable URL (Markdown)',
+    copied: 'Copied!',
+  },
+  fullscreen: { exit: 'Exit' },
+  typeChange: { confirm: 'Clear the editor and load the {type} example?', keep: 'Keep my content', clear: 'Clear & load example' },
+  examples: { title: 'Examples', search: 'Search…', use: 'Use', docs: 'Documentation', empty: 'No examples match your search', close: 'Close', confirmReplace: 'This will replace your current diagram. Continue?', cancel: 'Cancel', replace: 'Replace' },
+}

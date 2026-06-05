@@ -1,0 +1,18 @@
+{
+  "version": "0.2",
+  "ignorePaths": [],
+  "dictionaryDefinitions": [],
+  "dictionaries": [],
+  "words": [
+    "buildx",
+    "changelogen",
+    "iconify",
+    "kroki",
+    "lezer",
+    "opencontainers",
+    "panzoom",
+    "yoyoys"
+  ],
+  "ignoreWords": [],
+  "import": []
+}

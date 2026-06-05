@@ -1,0 +1,27 @@
+export default {
+  app: { title: 'Kroki Editor' },
+  toolbar: { share: '分享', edit: '編輯', view: '預覽', fullscreen: '全螢幕', language: '語言', theme: '主題', examples: '範例', copyImage: '複製圖片連結' },
+  zoom: { in: '放大', out: '縮小', fit: '符合畫面', background: '切換背景' },
+  preview: { empty: '在左側輸入圖表原始碼', rendering: '渲染中…' },
+  previewError: {
+    network: '無法連線到 Kroki server —— 請確認 endpoint，或此圖型的對應服務可能未啟用',
+    syntax: '圖表語法錯誤',
+    unsupported: '此圖型可能未在 server 上啟用對應服務',
+    unknown: '渲染失敗',
+    near: '約第 {line} 行',
+    details: '詳細',
+  },
+  share: {
+    title: '分享圖表',
+    format: '格式',
+    imageUrl: '圖片直連',
+    embed: 'Embed（Markdown）',
+    editable: '可編輯連結',
+    editableUrl: '可編輯網址',
+    editableMd: '可編輯網址（Markdown）',
+    copied: '已複製',
+  },
+  fullscreen: { exit: '退出' },
+  typeChange: { confirm: '要清除編輯區並帶入 {type} 範例嗎？', keep: '保留內容', clear: '清除並帶入範例' },
+  examples: { title: '範例', search: '搜尋…', use: '套用', docs: '文件', empty: '沒有符合的範例', close: '關閉', confirmReplace: '這會取代你目前的圖表內容，要繼續嗎？', cancel: '取消', replace: '取代' },
+}

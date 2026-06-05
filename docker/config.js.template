@@ -1,0 +1,14 @@
+window.__KROKI_CONFIG__ = {
+  title: "${PAGE_TITLE}",
+  endpoint: "${KROKI_ENDPOINT}",
+  exampleEndpoint: "${EXAMPLE_KROKI_ENDPOINT}",
+  enabledDiagrams: "${ENABLED_DIAGRAMS}".split(",").map(function (s) { return s.trim() }).filter(Boolean),
+  defaultDiagram: "${DEFAULT_DIAGRAM}",
+  mermaidClient: "${MERMAID_CLIENT_SIDE}".toLowerCase() === "true",
+  examples: {
+    plantuml: "${EXAMPLE_PLANTUML}",
+    mermaid: "${EXAMPLE_MERMAID}",
+    graphviz: "${EXAMPLE_GRAPHVIZ}",
+    d2: "${EXAMPLE_D2}",
+  },
+};
