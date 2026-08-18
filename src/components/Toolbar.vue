@@ -83,7 +83,8 @@ const { copied, copy } = useClipboard()
 .toolbar { display: flex; align-items: center; gap: .6rem; padding: .55rem .8rem; border-bottom: 1px solid var(--border, #3a3a3a); }
 .logo { font-weight: 600; font-size: .95rem; }
 .spacer { flex: 1; }
-select { padding: .25rem .5rem; border-radius: 6px; background: #222; color: inherit; border: 1px solid var(--border, #444); }
+select { padding: .25rem .5rem; border-radius: 6px; background: inherit; color: inherit; border: 1px solid var(--border, #444); }
+select > option { background: var(--bg, inherit) }
 .seg { display: flex; background: #111; border-radius: 8px; padding: 2px; }
 .seg button { border: 0; background: transparent; color: inherit; padding: .25rem .6rem; border-radius: 6px; cursor: pointer; font-size: .8rem; }
 .seg button.on { background: var(--accent, #6c8cff); }
