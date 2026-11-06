@@ -1,6 +1,6 @@
 export default {
   app: { title: 'Kroki Editor' },
-  toolbar: { share: '分享', edit: '編輯', view: '預覽', fullscreen: '全螢幕', language: '語言', theme: '主題', examples: '範例', copyImage: '複製圖片連結' },
+  toolbar: { share: '分享', edit: '編輯', view: '預覽', fullscreen: '全螢幕', language: '語言', theme: '主題', examples: '範例', copyImage: '複製圖片連結', open: '開啟', downloadImage: '下載圖片', downloadSource: '下載原始碼' },
   zoom: { in: '放大', out: '縮小', fit: '符合畫面', background: '切換背景' },
   preview: { empty: '在左側輸入圖表原始碼', rendering: '渲染中…' },
   previewError: {
@@ -23,5 +23,7 @@ export default {
   },
   fullscreen: { exit: '退出' },
   typeChange: { confirm: '要清除編輯區並帶入 {type} 範例嗎？', keep: '保留內容', clear: '清除並帶入範例' },
+  open: { confirm: '你有未儲存的變更，要用開啟的檔案取代編輯區內容嗎？', cancel: '取消', replace: '取代', readError: '無法讀取 {name}', ok: '確定' },
+  download: { downloadImage: '下載圖片', format: '格式', cancel: '取消', download: '下載', diagramError: '圖表有錯誤，請修正後再下載', networkError: '無法從 Kroki server 取得圖片', httpError: 'Kroki server 無法渲染圖片（HTTP {status}）', failed: '無法下載圖片', openInTab: '在新分頁開啟圖片' },
   examples: { title: '範例', search: '搜尋…', use: '套用', docs: '文件', empty: '沒有符合的範例', close: '關閉', confirmReplace: '這會取代你目前的圖表內容，要繼續嗎？', cancel: '取消', replace: '取代' },
 }
