@@ -19,6 +19,9 @@ const emit = defineEmits<{
   'share': []
   'fullscreen': []
   'examples': []
+  'open': []
+  'downloadImage': []
+  'downloadSource': []
 }>()
 
 const { t } = useI18n()
@@ -42,6 +45,12 @@ const { copied, copy } = useClipboard()
 
     <button data-act="examples" :title="t('toolbar.examples')" @click="emit('examples')">
       <Icon icon="mdi:view-gallery-outline" />
+    </button>
+    <button data-act="open" :title="t('toolbar.open')" @click="emit('open')">
+      <Icon icon="mdi:folder-open" />
+    </button>
+    <button data-act="download-source" :title="t('toolbar.downloadSource')" @click="emit('downloadSource')">
+      <Icon icon="mdi:content-save" />
     </button>
 
     <div v-if="isMobile" class="seg">
@@ -69,6 +78,9 @@ const { copied, copy } = useClipboard()
       @click="copy(props.imageUrl, 'toolbar')"
     >
       <Icon :icon="copied === 'toolbar' ? 'mdi:check' : 'mdi:link-variant'" />
+    </button>
+    <button data-act="download-image" :title="t('toolbar.downloadImage')" @click="emit('downloadImage')">
+      <Icon icon="mdi:download" />
     </button>
     <button data-act="share" @click="emit('share')">
       <Icon icon="mdi:share-variant" /> {{ t('toolbar.share') }}
