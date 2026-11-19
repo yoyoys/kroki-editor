@@ -50,6 +50,24 @@ describe('toolbar', () => {
     expect(w.emitted('examples')).toHaveLength(1)
   })
 
+  it('emits open', async () => {
+    const w = mount(Toolbar, opts)
+    await w.find('[data-act="open"]').trigger('click')
+    expect(w.emitted('open')).toHaveLength(1)
+  })
+
+  it('emits download-image', async () => {
+    const w = mount(Toolbar, opts)
+    await w.find('[data-act="download-image"]').trigger('click')
+    expect(w.emitted('downloadImage')).toHaveLength(1)
+  })
+
+  it('emits download-source', async () => {
+    const w = mount(Toolbar, opts)
+    await w.find('[data-act="download-source"]').trigger('click')
+    expect(w.emitted('downloadSource')).toHaveLength(1)
+  })
+
   it('toggles locale via the language button', async () => {
     const w = mount(Toolbar, opts)
     expect(i18n.global.locale.value).toBe('en')

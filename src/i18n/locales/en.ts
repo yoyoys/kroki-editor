@@ -1,6 +1,6 @@
 export default {
   app: { title: 'Kroki Editor' },
-  toolbar: { share: 'Share', edit: 'Edit', view: 'View', fullscreen: 'Fullscreen', language: 'Language', theme: 'Theme', examples: 'Examples', copyImage: 'Copy image URL' },
+  toolbar: { share: 'Share', edit: 'Edit', view: 'View', fullscreen: 'Fullscreen', language: 'Language', theme: 'Theme', examples: 'Examples', copyImage: 'Copy image URL', open: 'Open', downloadImage: 'Download image', downloadSource: 'Download source' },
   zoom: { in: 'Zoom in', out: 'Zoom out', fit: 'Fit', background: 'Toggle background' },
   preview: { empty: 'Enter diagram source on the left', rendering: 'Rendering…' },
   previewError: {
@@ -23,5 +23,7 @@ export default {
   },
   fullscreen: { exit: 'Exit' },
   typeChange: { confirm: 'Clear the editor and load the {type} example?', keep: 'Keep my content', clear: 'Clear & load example' },
+  open: { confirm: 'You have unsaved changes. Replace the editor with the opened file?', cancel: 'Cancel', replace: 'Replace', readError: 'Could not read {name}.', ok: 'OK' },
+  download: { downloadImage: 'Download image', format: 'Format', cancel: 'Cancel', download: 'Download', diagramError: 'The diagram has errors. Fix them before downloading.', networkError: 'Could not fetch the image from the Kroki server.', httpError: 'The Kroki server could not render the image (HTTP {status}).', failed: 'The image could not be downloaded.', openInTab: 'Open the image in a new tab' },
   examples: { title: 'Examples', search: 'Search…', use: 'Use', docs: 'Documentation', empty: 'No examples match your search', close: 'Close', confirmReplace: 'This will replace your current diagram. Continue?', cancel: 'Cancel', replace: 'Replace' },
 }
